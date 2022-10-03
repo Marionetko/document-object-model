@@ -1,5 +1,8 @@
 # document-object-model
 
+- [Demo](https://marionetko.github.io/document-object-model/)
+- [Code](https://github.com/Marionetko/document-object-model)
+
 ### The main goal
 
 The main goal is a menu with the ability to load some pre-defined HTML content associated with its own menu item into the `<main>` content container on the right-hand side.
