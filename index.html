@@ -12,6 +12,7 @@
 	<title>DOM task</title>
 </head>
 <body>
+
 	<aside id="mySidenav" class="sidenav">
 		<nav class="sidenav__nav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:60px;cursor:pointer; color:#fff;">&times;</a>
@@ -21,12 +22,27 @@
 			<a class="nav__link" href="#">Winston<br>Zeddemore</a>
 		</nav>
 	</aside>
-	<video id="bg-video" autoplay loop muted plays-inline poster="/img/main-bg.webp">
-		<source src="/img/bg-video.mp4" type="video/mp4">
+
+	<video id="bg-video" autoplay loop muted plays-inline>
+		<source src="../img/bg-video.mp4" type="video/mp4">
 	</video>
 
 	<main class="main">
-		<span class="menu__open" style="font-size:40px;cursor:pointer; color:#fff;" onclick="openNav()">&#9776;</span>
+		<span class="menu__open" onclick="openNav()">&#9776;</span>
+
+		<section class="card">
+
+			<div class="img__placeholder">
+				<img class="img__card" src="/img/eagon.png" alt="">
+			</div>
+
+			<div class="card__description">
+				<p class="description__text">Egon is a former professor of paranormal studies at the Columbia University. Upon his termination, Egon founded Ghostbusters, Inc. along with Doctors Ray Stantz and Peter Venkman. He is considered the brain behind the Ghostbusters and has designed and built nearly all of their equipment, including the Proton Pack and the Storage facility. </p>
+				<sub class="description__sign">Eagon Spangler</sub>
+			</div>
+			
+		</section>
+
 	</main>
 
 	<audio autoplay loop controls class="audio" controlslist="nodownload">
