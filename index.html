@@ -13,7 +13,7 @@
 <body>
 	<aside id="mySidenav" class="sidenav">
 		<nav class="sidenav__nav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:60px;cursor:pointer; color:#00ff37;">&times;</a>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size:60px;cursor:pointer; color:#fff;">&times;</a>
 			<a class="nav__link" href="#">Eagon<br>Spengler</a>
 			<a class="nav__link" href="#">Peter<br>Venkman</a>
 			<a class="nav__link" href="#">Ray<br>Stantz</a>
@@ -22,10 +22,13 @@
 	</aside>
 
 	<main class="main">
-		<span style="font-size:50px;cursor:pointer; color:#00ff37;" onclick="openNav()">&#9776;</span>
+		<span style="font-size:50px;cursor:pointer; color:#fff;" onclick="openNav()">&#9776;</span>
 	</main>
 
-	<audio src="https://github.com/Marionetko/document-object-model/blob/main/audio/bg-music.mp3" loop autoplay></audio>
+	<audio autoplay loop controls class="audio" controlslist="nodownload">
+		<source src="../audio/bg-music.mp3" type="audio/mpeg">
+	</audio>
+
 	<script src="js/script.js"></script>
 </body>
 </html>
