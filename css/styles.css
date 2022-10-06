@@ -143,9 +143,10 @@ body {
 
 .audio {
 	position: absolute;
-	right: 5px;
-	bottom: 5px;
+	right: 0;
+	bottom: 0;
 	width: 320px;
+	margin: 25px;
 }
   
   @media screen and (max-height: 450px) {
