@@ -203,11 +203,24 @@ body {
 	width: 100%;
     margin: 0 auto;
     height: auto;
+	opacity: 0;
+	animation: transparency 2s ease 2.4s 1 forwards;
 }
 
 .card__description {
 	color: #fff;
 	margin: 10px;
+	opacity: 0;
+	animation: transparency 1.5s ease 3.2s 1 forwards;
+}
+
+@keyframes transparency {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .description__text {
