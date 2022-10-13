@@ -199,6 +199,12 @@ body {
 	
 }
 
+.img__card {
+	width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
 .card__description {
 	color: #fff;
 	margin: 10px;
