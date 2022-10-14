@@ -147,6 +147,10 @@ body {
 	margin-left: 50px;
 }
 
+.open {
+	width: 250px;
+}
+
 .audio {
 	position: absolute;
 	right: 0;

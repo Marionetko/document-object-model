@@ -21,10 +21,8 @@ const characters = [
   }
 ];
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+function openCloseNav() {
+    let element = document.getElementById("mySidenav");
+    element.classList.toggle("open");
   }
   
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
