@@ -119,7 +119,7 @@ body {
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
-	z-index: 3;
+	z-index: 9999;
   }
 
 .sidenav__nav {
@@ -179,7 +179,6 @@ body {
 	width: 100%;
 	max-width: 500px;
 	height: auto;
-	min-height: 500px;
 	margin: 0 auto;
 	padding: 15px;
 	z-index: 2;
@@ -193,14 +192,14 @@ body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -250%);
 	animation: drop 1.5s ease-out 1s 1 forwards;
 }
 
 @keyframes drop {
 
 	from {
-		transform: translate(-50%, -200%);
+		transform: translate(-50%, -250%);
 	}
 	to {
 		transform: translate(-50%, -50%);
@@ -245,11 +244,61 @@ body {
 	font-style: italic;
 }
   
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
 	.sidenav {
 		padding-top: 15px;
 	}
 	.sidenav a {
 		font-size: 18px;
 	}
-  }
+}
+
+@media (max-width: 380px) {
+	
+	.sidenav .nav__link {
+		font-size: 20px;
+	}
+
+	.description__text{
+		font-size: 12px;
+	}
+
+	.description__sign {
+		font-size: 10px;
+	}
+
+	.audio {
+		width: 270px;
+	}
+
+	.open {
+		width: 200px;
+	}
+}
+
+@media (max-width: 325px) {
+	
+	.sidenav .nav__link {
+		font-size: 20px;
+	}
+
+	.card {
+		flex-wrap: nowrap;
+	}
+
+	.img__card {
+		max-width: 120px;
+	}
+
+	.description__text{
+		font-size: 12px;
+	}
+
+	.description__sign {
+		font-size: 10px;
+	}
+
+	.audio {
+		width: 270px;
+	}
+}
