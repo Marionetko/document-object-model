@@ -253,22 +253,64 @@ body {
 	}
 }
 
+@media (max-width: 1030px) {
+	.card {
+		flex-wrap: nowrap;
+	}
+
+	.img__card {
+		width: 130px;
+	}
+}
+
+@media (max-width: 920px) {
+	.img__card {
+		width: 116px;
+	}
+
+	.audio {
+		margin: 10px;
+	}
+}
+
+@media (max-width: 655px){
+	.img__card {
+		width: 100px;
+	}
+
+	.description__text{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 550px) {
+	.img__card {
+		max-width: 160px;
+	}
+}
+
+@media (max-width: 400px) {
+	.img__card {
+		max-width: 200px;
+	}
+}
+
 @media (max-width: 380px) {
 	
 	.sidenav .nav__link {
 		font-size: 20px;
 	}
 
+	.img__card {
+		max-width: 140px;
+	}
+
 	.description__text{
-		font-size: 12px;
+		font-size: 13px;
 	}
 
 	.description__sign {
-		font-size: 10px;
-	}
-
-	.audio {
-		width: 270px;
+		font-size: 11px;
 	}
 
 	.open {
@@ -282,12 +324,8 @@ body {
 		font-size: 20px;
 	}
 
-	.card {
-		flex-wrap: nowrap;
-	}
-
 	.img__card {
-		max-width: 120px;
+		min-width: 120px;
 	}
 
 	.description__text{
@@ -300,5 +338,12 @@ body {
 
 	.audio {
 		width: 270px;
+	}
+}
+
+@media (max-width: 285px){
+	.audio {
+		width: 260px;
+		margin: 10px;
 	}
 }
