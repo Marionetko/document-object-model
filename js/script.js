@@ -21,8 +21,25 @@ const characters = [
   }
 ];
 
-function openCloseNav() {
+function openCloseNav(characterIndex) {
     let element = document.getElementById("mySidenav");
     element.classList.toggle("open");
+
+    if (typeof characterIndex != 'undefined') {
+      updateCharacterInfo(characterIndex);
+    }
   }
   
+function updateCharacterInfo(characterIndex) {
+  const characterImg = document.getElementById('charcterImg');
+  const characterDescription = document.getElementById('characterDescription');
+  const characterName = document.getElementById("characterName");
+
+  if(characterIndex >= 0 && characterIndex < characters.length) {
+    const character = characters[characterIndex];
+
+    characterImg.src = character.picture;
+    characterDescription.textContent = character.description;
+    characterName.textContent = character.name
+  }
+}
